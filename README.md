@@ -5,7 +5,7 @@
 
 
 # Required Tools & Installation
-To compile and run the RISC-V programs, i used:
+To compile and run the RISC-V programs, I used:
 
 - RISC-V Cross-Compiler (riscv64-unknown-elf-gcc and riscv64-linux-gnu-gcc)
 - QEMU for RISC-V (to run the compiled programs)
@@ -55,7 +55,7 @@ qemu-riscv64 ./build/cond_example
 qemu-riscv64 ./build/program
 ```
 
-# why did I use static compilation
+# why did I use static compilation?
 By default, programs compiled with ``riscv64-linux-gnu-gcc`` dynamically link to system libraries.
 This means that at runtime, they require access to shared libraries such as ``ld-linux-riscv64-lp64d.so.1.``
 
