@@ -3,6 +3,24 @@
 - This repository contains some simple RISC-V assembly and C programs demonstrating -multithreading, system calls, and arithmetic operations.
 - All programs are compiled STATICALLY, so they do not require additional shared libraries at runtime.
 
+## Prerequisite
+
+```bash
+sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip python3-tomli libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev
+```
+
+## Downlowding Qemu for RISC-V
+```bash
+sudo apt install qemu-system-riscv64 qemu-user qemu-system-misc
+```
+
+## Downloading The Toolchain Sources
+
+```bash
+cd $HOME
+git clone --recurse-submodules https://github.com/riscv-collab/riscv-gnu-toolchain
+cd riscv-gnu-toolchain
+```
 
 # Required Tools & Installation
 To compile and run the RISC-V programs, I used:
